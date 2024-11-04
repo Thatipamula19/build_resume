@@ -1,0 +1,25 @@
+.form_area {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin: 20px;
+}
+
+/* .form_area div {
+    display: flex;
+    justify-content: space-evenly;
+} */
+
+/* .form_area_description {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: 20px;
+} */
+
+/* .form_area_description div {
+    display: flex;
+} */
+.form_area_description textarea {
+    margin-left: 20px;
+}
