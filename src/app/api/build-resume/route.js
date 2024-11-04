@@ -11,8 +11,8 @@ export async function POST(request) {
         const browser = await puppeteer.launch({
             headless: chromium.args,
             args: [...chromium.args, '--no-sandbox', '--disable-setuid-sandbox'],
-            executablePath: "C:/Program Files/Google/Chrome/Application/chrome.exe", // this is for local
-            // executablePath: await chromium.executablePath("https://s3.ap-south-1.amazonaws.com/ilwebsite2.devinfinitylearn.in/npm-libraries/chromium-v130.0.0-pack.tar"),
+            // executablePath: "C:/Program Files/Google/Chrome/Application/chrome.exe", // this is for local
+            executablePath: await chromium.executablePath("https://s3.ap-south-1.amazonaws.com/ilwebsite2.devinfinitylearn.in/npm-libraries/chromium-v130.0.0-pack.tar"),
         });
         const page = await browser.newPage();
         await page.setContent(htmlContent);
