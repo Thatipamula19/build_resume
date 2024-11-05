@@ -13,6 +13,9 @@ const ResumeForm = () => {
     const [isLoading, setIsLoading] = useState(false);
     const onSubmit = async (data) => {
         console.log(data);
+        const base64File = await toBase64(data.file[0]);
+        data.photo = base64File,
+        data.photoName = data.file[0].name,
         setIsLoading(true);
         const response = await fetch('/api/build-resume', {
             method: 'POST',
@@ -51,6 +54,15 @@ const ResumeForm = () => {
     const closePdfPopup = (value) => {
         setShowPdfPopup(value)
     }
+
+    const toBase64 = (file) => {
+        return new Promise((resolve, reject) => {
+          const reader = new FileReader();
+          reader.readAsDataURL(file);
+          reader.onload = () => resolve(reader.result);
+          reader.onerror = (error) => reject(error);
+        });
+      };
 
     return (
         <>
@@ -94,6 +106,19 @@ const ResumeForm = () => {
                                             className="form-control"
                                             {...register("profileSummary", { required: true })}
                                         />
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="formFile" class="form-label">Default file input example</label>
+                                        <input class="form-control" type="file" id="formFile"
+                                        {...register('file', { required: 'File is required' })}
+                                        accept="*/*" />
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"
+                                            {...register('isPhotoShow', { required: false})}/>
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                isPhotoShow
+                                                </label>
+                                        </div>
                                     </div>
                                 </div>
                                 <div className={classes?.form_area}>

@@ -72,6 +72,7 @@ export const GenerateResume = (resume) => {
     <section class="resume_section">
         <div>
             <div class="profile_area">
+                ${ resume?.isPhotoShow ? `<img class="profile_image" src=${resume?.photo} alt="profile" width="200" height="200">` : ''}
                 <h2 class="profile_name">${resume?.name}</h2>
                 <h4 class="profile_position">${resume?.position}</h4>
                 <summary class="profile_summary">${resume?.profileSummary}</summary>
