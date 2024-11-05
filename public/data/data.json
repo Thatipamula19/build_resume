@@ -1,0 +1,32 @@
+{
+  "users": [
+    {
+      "name": "venkatesh thatipamula ",
+      "position": "Software Development Engineer",
+      "profileSummary": "I have 3+ years of experience as a committed web developer, building reliable, user-focused websites. Skilled in Next.js,  React, and Angular, I create scalable solutions that provide outstanding user experiences. enthusiastic about using  cutting-edge technologies to develop highly functional apps and websites. demonstrated capacity to translate challenging  specifications into creative digital products. ",
+      "phone": "7702961696",
+      "email": "thatipamulavenkatesh96@gmail.com",
+      "linkedin": "linkedin.com/in/thatipamula-venkatesh-a54830215 ",
+      "address": "Hyderabad, India ",
+      "experiences": [
+        {
+          "company": "Software Development Engineer ",
+          "position": "Infinity Learn",
+          "duration": "02/2023 - Present",
+          "address": "Hyderabad, India.",
+          "description": "I have effectively collaborated with marketing and\n product teams to ensure seamless alignment of\n development efforts with organizational objectives. \nWith expertise in Angular, React, and Next.js, I\n consistently create cutting-edge, responsive web\n pages that exceed expectations and follow industry\n trends. \nI proficiently use Jira for project management, tracking\n progress, and ensuring tasks are completed within\n defined timelines, enhancing the development process.\n In cross-functional discussions, I provide valuable\n technical insights that inform decision-making and\n support successful marketing and product initiatives. \nI demonstrate strong collaboration skills by quickly\n troubleshooting and resolving issues, ensuring the\n timely delivery of high-quality, error-free web pages."
+        },
+        {
+          "company": "SmartGig Technologies Private Limited, ",
+          "position": "Software Consultant ",
+          "duration": "01/2021 - 01/2023",
+          "address": "Hyderabad, India. ",
+          "description": "I collaborate closely with clients to understand their\n unique web development needs and ensure effective\n communication. \nI employ an agile approach to deliver quick and\n accurate development, aligning with project timelines\n and client expectations. \nI design customized web pages that seamlessly\n integrate design and functionality for an optimal user\n experience. \nI utilize Bitbucket for version control, maintaining code\n integrity, and supporting collaborative development for\n client-focused solutions. \nI actively participate in client meetings, contributing to\n technical discussions and optimizing web\n development based on client feedback. "
+        }
+      ],
+      "skills": "Angular, React, Next.js",
+      "photo": "",
+      "isPhotoShow": false
+    }
+  ]
+}
